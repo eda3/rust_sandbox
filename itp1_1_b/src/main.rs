@@ -1,3 +1,5 @@
+// ITP1_1_B X Cubic
+// http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ITP1_1_B&lang=ja
 use std::io;
 
 // 一行読み込み
