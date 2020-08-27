@@ -1,21 +1,8 @@
-// ITP1_1_B X Cubic
-// http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ITP1_1_B&lang=ja
-use std::io;
-
-// 一行読み込み
-fn input() -> u32 {
-    let mut buf = String::new();
-    let stdin = io::stdin();
-    stdin.read_line(&mut buf).unwrap();
-    return buf.trim().parse().unwrap();
-}
-
-// 三乗して返却
-fn cube(x: u32) -> u32 {
-    return x * x * x;
-}
-
 fn main() {
-    let x: u32 = input();
-    println!("{}", cube(x));
+  let x: u32 = {
+    let mut b = String::new();
+    std::io::stdin().read_line(&mut b).unwrap();
+    b.trim().parse().unwrap()
+  };
+  println!("{}", x * x * x)
 }
