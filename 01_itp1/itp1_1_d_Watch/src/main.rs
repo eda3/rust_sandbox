@@ -4,8 +4,5 @@ fn main() {
     std::io::stdin().read_line(&mut b).unwrap();
     b.trim().parse().unwrap()
   };
-  let h = s / 3600;
-  let m = (s - h * 3600) / 60;
-  let s = s % 60;
-  println!("{}:{}:{}", h, m, s);
+  println!("{}:{}:{}", s / 3600, s / 60 % 60, s % 60)
 }
